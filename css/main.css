@@ -4,44 +4,110 @@ Sample css code
 /* Set height to 100% for body and html to enable the background image to cover the whole page: */
 body,
 html {
-  height: 100%;
+    min-height: 100%;
+}
+body{
+    background-image: url('books.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.top-header{
+    width:100%;
+    max-width:960px;
+    font:6em "Amatic SC", cursive;
+    color:#fff;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+    margin:40px auto;
+    text-align:center; 
+}
+*{
+    margin:0px;
+    padding:0px;
 }
 
-/*Set background image*/
-.container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+.nav-main{
+    width:100%;
+    background-color:#222;
+    height:0px;
+    color:#fff;
 }
-
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  color: beige;
-  top: 70%;
-  left: 39%;
-  text-align: center;
-  font-size: 25px;
+    .nav-main .logo {
+        float: left;
+        height: 100px;
+        padding: 15px 30px;
+        font: 5em "Amatic SC", cursive;
+        line-height: 40px;
+    }
+.nav-main > ul{
+    margin:0;
+    padding:0;
+    float:left;
+    list-style-type:none;
 }
-
-/*Set circle in unordered list*/
-.middle ul {
-  list-style-type: circle;
+.nav-main > ul > li{
+    float:left;
 }
-
-/*Set text inside li tag to left*/
-.middle ul li {
-  text-align: left !important;
+.nav-item {
+    display:inline-block;
+    padding: 20px 70px;
+    height: 100px;
+    line-height: 40px;
+    color: #fff;
+    text-decoration:wavy;
+    list-style-position:inside;
+    font: 2em "Amatic SC", cursive;
 }
-
-/*Set text color for a tag inside middle class and ul>li element*/
-.middle ul li a {
-  color: beige;
+.nav-content{
+    position:inherit;
+    top:70px;
+    overflow:hidden;
+    max-height:0;
 }
-
-/*Change text color and decoration for a tags inside middle class and ul>li element*/
-.middle ul li a:hover {
-  color: red;
-  text-decoration: none;
+.nav-content a{
+    color:#fff;
+    text-decoration:none;
+}
+.nav-content a:hover{
+    text-decoration:underline;
+}
+,nav-sub{
+    padding:20px;
+}
+.nav-sub ul{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+}
+    .nav-sub ul li a {
+        display: inline-block;
+        padding: 4px 0;
+        font: 1.5em "Amatic SC", cursive;
+    }
+.nav-item:focus ~ .nav-content {
+    max-height: 200px;
+    -webkit-transition: max-height 0.4s ease-in;
+    -moz-transition: max-height 0.4s ease-in;
+    transition: max-height 0.4s ease-in;
+}
+.search-form {
+    margin-top: 0px;
+    float: right;
+    margin-right: 20px;
+    padding: 20px 0px;
+    font: "Amatic SC", cursive;
+}
+input[type=text] {
+    padding: 7px;
+    border: none;
+    font: 1em "Times new roman", cursive;
+}
+button {
+    font: 1em "Amatic SC", cursive;
+    background:black;
+    color:white;
+    border-radius:0 5px 5px 0;
+    cursor:pointer;
+    position:relative;
+    padding:10px;
+    font-family:"Amatic SC";
 }
