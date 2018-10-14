@@ -1,0 +1,17 @@
+/**
+Sample css code
+*/
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body,
+html {
+  height: 100%;
+}
+
+/*Set background image*/
+.container {
+    background-image: url('https://www.google.com/search?q=books&rlz=1C1CHBF_enIN806IN806&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj_pYnoyITeAhXlRt8KHdZ6BI0Q_AUIDigB&biw=1536&bih=723#imgrc=1Al7lXdR-2sipM:');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
