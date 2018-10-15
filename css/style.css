@@ -16,7 +16,15 @@ ul{
   margin:0;
   padding:0;
 }
-
+.boxed {
+    border: 1px solid green;
+    width: 80%;
+    margin: 50px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
 
 
 /* Header **/
