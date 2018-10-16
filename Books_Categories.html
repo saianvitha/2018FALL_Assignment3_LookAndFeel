@@ -15,14 +15,24 @@
         }
 
         .top-header {
-            width: 50%;
-            max-width: 50px;
-            font: 6em "Amatic SC", cursive;
+            width: 100%;
+            max-width: 100px;
+            font: 5em "Amatic SC", cursive;
+            color: #fff;
+            padding-left:20px;
+            text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
+            margin: 30px;
+            text-align:center;
+        }
+        /*.middle-header {
+            width: 100%;
+            max-width: 70px;
+            font: 4em "Amatic SC", cursive;
             color: #fff;
             text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
             margin: 10px;
             text-align: left;
-        }
+        }*/
 
         * {
             margin: 0px;
@@ -42,25 +52,38 @@
 
         .nav-item {
             display:block;
-            padding: 20px 70px;
+            padding: 40px 80px;
             height: 100px;
             line-height: 40px;
             color: #fff;
+            margin-top:10px;
             text-decoration: wavy;
             list-style-position: inside;
             font: 3em "Amatic SC", cursive;
+        }
+        .middle-header {
+            width: 100%;
+            max-width: 100px;
+            font: 3em "Amatic SC", cursive;            
+            color: #fff;
+            padding-left: 20px;
+            /*text-shadow: 1px 1px 0 rgba(0,0,0,0.1);*/
+            text-decoration: none;
+            margin: 10px;
+            text-align: unset;
         }
     
     </style>
 </head>
 <body>
-    <h1 class="top-header">Bibliophile </h1>
+    <label class="top-header">Bibliophile - </label>
+    <label class="top-header">Book Categories </label>
+    <label class="middle-header"><a style="color:white" href="index.html">Home</a></label>
+    <!--<h2 class="middle-header">Book-Categories</h2>-->
     <nav class="nav-main">
-        <div class="logo">Home</div>
+        <!--<div class="logo">Home</div>-->
         <ul>
-            <li>
-                <a href="index.html" class="nav-item">Home</a>
-            </li>
+            
             <li>
                 <a href="https://www.goodreads.com/genres/science-fiction" class="nav-item">Science Fiction</a>
             </li>
@@ -75,7 +98,7 @@
                 <a href="https://www.goodreads.com/list/tag/horror" class="nav-item">Horror</a>
             </li>
             <li>
-                <a href="https://www.goodreads.com/list/show/514.Best_Action_Adventure_Novels"class="nav-item">Action and Adventure</a>
+                <a href="https://www.goodreads.com/list/show/514.Best_Action_Adventure_Novels" class="nav-item">Action and Adventure</a>
             </li>
         </ul>
     </nav>
